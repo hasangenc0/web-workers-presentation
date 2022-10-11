@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    html {
+      background-color: #333;
+      color: red;
+      font-family: "Helvetica";
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <form id="form" action>
+      <input type="radio" name="option" value="option1" checked="true">
+      <label for="option">main thread</label>
+      <br>
+      <input type="radio" name="option" value="option2" >
+      <label for="option">worker thread</label>
+    </form>
+    <div id="status"></div>
+    <br/>
+
+    <input type="file" accept="image/*" name="input" id="input">
+  </div>
+
+  <br/>
+
+  <canvas id="preview"></canvas>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
